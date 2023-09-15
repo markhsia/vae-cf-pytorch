@@ -8,7 +8,8 @@ class DataLoader():
     Load Movielens-20m dataset
     '''
     def __init__(self, path):
-        self.pro_dir = os.path.join(path, 'pro_sg')
+        #self.pro_dir = os.path.join(path, 'pro_sg')
+        self.pro_dir = os.path.join(path, 'data')
         assert os.path.exists(self.pro_dir), "Preprocessed files does not exist. Run data.py"
 
         self.n_items = self.load_n_items()
